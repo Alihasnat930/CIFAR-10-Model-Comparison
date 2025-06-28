@@ -74,7 +74,8 @@ All models were pre-trained on ImageNet and fine-tuned on CIFAR-10.
 
 - **SDG 4** – Quality Education  
 - **SDG 9** – Industry, Innovation, and Infrastructure  
-
+# Output: [kaggle kernels output syedalihasnat/ciraf-10 -p /path/to/dest]
+[https://www.kaggle.com/code/syedalihasnat/ciraf-10]
 ---
 
 ## 👨‍💻 Author
