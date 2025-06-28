@@ -51,22 +51,25 @@ All models were pre-trained on ImageNet and fine-tuned on CIFAR-10.
 
 ## 📊 Results Summary
 
-| Model     | Accuracy | Params (M) | Train Time | Inference Time |
-|-----------|----------|------------|------------|----------------|
-| AlexNet   | ~77%     | 61.1       | Fast       | Very Fast      |
-| VGG16     | ~82%     | 138.4      | Slow       | Moderate       |
-| ResNeXt50 | ~85%     | 22.9       | Moderate   | Fast           |
-| ViT Base  | ~88%     | 86.4       | Moderate   | Moderate       |
+| Model      | Parameters | Train Time (s) | Inference Time (ms) | Accuracy  |
+|------------|------------|----------------|----------------------|-----------|
+| AlexNet    | ~61M       | ~68            | ~2.3                 | ~89%      |
+| VGG16      | ~134M      | ~96            | ~3.5                 | ~92%      |
+| ResNeXt50  | ~25M       | ~82            | ~2.9                 | ~95%      |
+| ViT Base   | ~86M       | ~71            | ~5.7                 | ~95%      |
 
 
 ---
 
-## 📌 Key Findings
+## 📌 Key Observations
+ViT and ResNeXt50 outperformed the others in accuracy.
 
-- **ViT** performs best in accuracy but is slower in inference.
-- **ResNeXt50** offers the best trade-off between accuracy and speed.
-- **VGG16** is large and slower, despite good accuracy.
-- **AlexNet** is fastest but underperforms on complex patterns.
+ResNeXt provided the best trade-off between speed and performance.
+
+AlexNet, while outdated, still performed decently on CIFAR-10.
+
+Inference time and model size vary significantly — critical for deployment.
+
 
 ---
 
